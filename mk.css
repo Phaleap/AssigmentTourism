@@ -1,0 +1,1818 @@
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x:hidden;
+            color: white;
+        }
+.spacer {
+  height: 150vh; /* enough height for scroll animations */
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.MkText {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-family: "Cabin", sans-serif;
+  margin-bottom: 40px;
+}
+
+.MkDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.textDescript {
+  font-size: 1.5rem;
+  line-height: 1.8;
+   font-family: "Antic Didone", serif;
+  opacity: 1; /* for animation */
+  position: relative;
+}
+ .textDescript::after {
+  content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform-origin: left;
+            transform: scaleX(0);
+            background-color: black;
+            transition: transform 0.3s ease;
+ }
+  .textDescript:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+ 
+
+.mkImage {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0; /* for animation */
+}
+
+
+        .parallax-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .background {
+            width: 100%;
+            height: 150%;
+            top:0;
+            left: 0;
+            position: absolute;
+            background-image: url(https://atypikvietnam.com/wp-content/uploads/2022/06/G%C3%A9ographie-de-Mondolkiri-Cambodge.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            z-index: 1;
+        }
+        .foreground {
+            z-index: 2;
+            font-family: "Antic Didone", serif;
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .foreground h1 {
+           font-size: 2rem;
+        }
+        .horizontal-container {
+            display: flex;
+            height: 100vh;
+            width: 400vw;
+            flex-wrap: nowrap;
+            
+        }
+        .panel {
+            background-color: white;
+            color: black;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+             font-size: 2rem;
+            font-weight: bold;
+            flex-direction: column;
+          font-family: "Antic Didone", serif;
+        }
+        .foreground span {
+  margin: 0 10px;
+}
+.image {
+    width: 400px;
+}
+
+
+.parallax-section a {
+  z-index: 3;
+  position: absolute;
+  top: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image1 {
+  width: 900px;
+  border-radius: 20px;
+}
+.image3 {
+  width: 800px;
+  border-radius: 20px;
+}
+.image2 {
+  width: 800px;
+  border-radius: 20px;
+}
+.image4 {
+  width: 800px;
+  border-radius: 20px;
+}
+
+ .Talking {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+ }
+ .BouSra {
+  height: 250vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .BouSra h1 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+ }
+  .BouSra h1::after {
+  content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform-origin: left;
+            transform: scaleX(0);
+            background-color: black;
+            transition: transform 0.3s ease;
+ }
+  .BouSra h1:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+ .BouSraDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 1.3rem;
+  margin-top: 100px;
+ }
+ .BouSraDescription p {
+  width: 550px;
+  font-family: "Outfit", sans-serif;
+ }
+ .BouSraDescription img {
+  width: 800px;
+  border-radius: 20px;
+ }
+  .LengKhinDescription {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 200px;
+ }
+ .LengKhinDescription p {
+  width: 600px;
+  font-family: "Outfit", sans-serif;
+ }
+ .LengKhinDescription img {
+  width: 800px;
+  border-radius: 20px;
+ }
+ .PhnongEthnic {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  
+ }
+ .PhnongEthnic img {
+  border-radius: 20px;
+ }
+ .PhnongEthnic h1 {
+  font-size: 2.5rem;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ 
+ .PhnongHeading {
+  padding: 100px;
+ }
+ .PhnongImage-Container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongImage-Container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongDescription {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 45px;
+  padding: 50px;
+  text-align: center;
+ }
+ .PhnongDescription p {
+  position: relative;
+ }
+ .PhnongDescription P::after {
+  content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform-origin: left;
+            transform: scaleX(0);
+            background-color: black;
+            transition: transform 0.3s ease;
+ }
+  .PhnongDescription p:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+ 
+ .ElephantValley {
+  margin-top: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+ }
+ .welcomeElephant {
+  width: 80%;
+  border-radius: 20px;
+
+ }
+ .ElephantValleyText {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+ }
+ .ElephantImage {
+  width: 1000px;
+ }
+ .Elephant-cards {
+  margin-top: 200px;
+ }
+ .Elephant-cards p {
+  width: 1000px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+ }
+ .ElephantCard1 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard2 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard3 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .Elephant-cards img {
+  border-radius: 20px;
+ }
+.JungleTrek {
+  
+  margin-top: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
+.JungleTrekContainer {
+   font-family: "Raleway", sans-serif;
+   font-size: 3rem;
+} 
+
+.JungleTrek1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+.JungleTrek2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 900px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.JungleTrek1 img,
+.JungleTrek2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.JungleTrekText1,
+.JungleTrekText2 {
+  margin-top: 20px;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.JungleTrekText1 h1,
+.JungleTrekText2 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.JungleTrekText1 p,
+.JungleTrekText2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.JungleTrekContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.JungleTrekContainer .JungleTrekText {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 200px;
+  color: black;
+}
+@media (max-width: 600px){
+ .foreground {
+            z-index: 2;
+            font-family: "Antic Didone", serif;
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .foreground h1 {
+           font-size: 2rem;
+        }
+        .spacer {
+  height: 150vh; /* enough height for scroll animations */
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MkText {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-family: "Cabin", sans-serif;
+  margin-bottom: 40px;
+}
+
+.MkDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.textDescript {
+  font-size: 1.5rem;
+  line-height: 1.8;
+   font-family: "Antic Didone", serif;
+  opacity: 1; /* for animation */
+  position: relative;
+}
+ .horizontal-container {
+            display: flex;
+            height: 100vh;
+            width: 400vw;
+            flex-wrap: nowrap;
+            
+        }
+        .panel {
+            background-color: white;
+            color: black;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+             font-size: 1rem;
+            font-weight: bold;
+            flex-direction: column;
+          font-family: "Antic Didone", serif;
+        }
+        .image1 {
+    width: 400px;
+}
+    .image2 {
+    width: 400px;
+}
+    .image3 {
+    width: 400px;
+}
+    .image4 {
+    width: 400px;
+}
+.Talking {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+ }
+  .BouSra {
+  height: 250vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .BouSra h1 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+ }
+
+  .BouSraDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1rem;
+  margin-top: 100px;
+ }
+ .BouSraDescription p {
+  width: 500px;
+  font-family: "Outfit", sans-serif;
+ }
+ .BouSraDescription img {
+  width: 400px;
+  border-radius: 20px;
+ }
+ .LengKhinDescription {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 200px;
+ }
+ .LengKhinDescription p {
+  width: 500px;
+  font-family: "Outfit", sans-serif;
+ }
+ .LengKhinDescription img {
+  width: 400px;
+  border-radius: 20px;
+ }
+ .PhnongEthnic {
+  margin-top: 100px;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+ }
+ .PhnongEthnic img {
+  border-radius: 20px;
+ }
+ .PhnongEthnic h1 {
+  font-size: 2rem;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ 
+ .PhnongHeading {
+  padding: 100px;
+ }
+ .PhnongImage-Container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongImage-Container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongImage-1 {
+  width: 400px;
+ }
+ .PhnongImage-2 {
+  width: 400px;
+ }
+ .PhnongImage-3 {
+  width: 400px;
+ }
+ .PhnongImage-4 {
+  width: 400px;
+ }
+ .PhnongDescription {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1rem;
+  padding: 50px;
+  text-align: center;
+ }
+ .ElephantValley {
+  margin-top: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+ }
+ .welcomeElephant {
+  width: 80%;
+  border-radius: 20px;
+
+ }
+ .ElephantValleyText {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+ }
+ .ElephantImage {
+  width: 500px;
+ }
+ .Elephant-cards {
+  margin-top: 200px;
+ }
+ .Elephant-cards p {
+  width: 500px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+ }
+ .ElephantCard1 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard2 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard3 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .Elephant-cards img {
+  border-radius: 20px;
+ }
+ .JungleTrek {
+  
+  margin-top: 100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
+.JungleTrekContainer {
+   font-family: "Raleway", sans-serif;
+   font-size: 2rem;
+} 
+
+.JungleTrek1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+.JungleTrek2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.JungleTrek1 img,
+.JungleTrek2 img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.JungleTrekText1,
+.JungleTrekText2 {
+  margin-top: 20px;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.JungleTrekText1 h1,
+.JungleTrekText2 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.JungleTrekText1 p,
+.JungleTrekText2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.JungleTrekContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.JungleTrekContainer .JungleTrekText {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 200px;
+  color: black;
+}
+}
+@media (min-width: 600px) {
+   .foreground {
+            z-index: 2;
+            font-family: "Antic Didone", serif;
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .foreground h1 {
+           font-size: 2rem;
+        }
+        .spacer {
+  height: 150vh; /* enough height for scroll animations */
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MkText {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-family: "Cabin", sans-serif;
+  margin-bottom: 40px;
+}
+
+.MkDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.textDescript {
+  font-size: 1.5rem;
+  line-height: 1.8;
+   font-family: "Antic Didone", serif;
+  opacity: 1; /* for animation */
+  position: relative;
+}
+ .horizontal-container {
+            display: flex;
+            height: 100vh;
+            width: 400vw;
+            flex-wrap: nowrap;
+            
+        }
+        .panel {
+            background-color: white;
+            color: black;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+             font-size: 1rem;
+            font-weight: bold;
+            flex-direction: column;
+          font-family: "Antic Didone", serif;
+        }
+        .image1 {
+    width: 400px;
+}
+    .image2 {
+    width: 400px;
+}
+    .image3 {
+    width: 400px;
+}
+    .image4 {
+    width: 400px;
+}
+.Talking {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+ }
+  .BouSra {
+  height: 250vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .BouSra h1 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+ }
+
+  .BouSraDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1rem;
+  margin-top: 100px;
+ }
+ .BouSraDescription p {
+  width: 500px;
+  font-family: "Outfit", sans-serif;
+ }
+ .BouSraDescription img {
+  width: 400px;
+  border-radius: 20px;
+ }
+ .LengKhinDescription {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 200px;
+ }
+ .LengKhinDescription p {
+  width: 500px;
+  font-family: "Outfit", sans-serif;
+ }
+ .LengKhinDescription img {
+  width: 400px;
+  border-radius: 20px;
+ }
+ .PhnongEthnic {
+  margin-top: 100px;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+ }
+ .PhnongEthnic img {
+  border-radius: 20px;
+ }
+ .PhnongEthnic h1 {
+  font-size: 2rem;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ 
+ .PhnongHeading {
+  padding: 100px;
+ }
+ .PhnongImage-Container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongImage-Container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongImage-1 {
+  width: 400px;
+ }
+ .PhnongImage-2 {
+  width: 400px;
+ }
+ .PhnongImage-3 {
+  width: 400px;
+ }
+ .PhnongImage-4 {
+  width: 400px;
+ }
+ .PhnongDescription {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1rem;
+  padding: 50px;
+  text-align: center;
+ }
+ .ElephantValley {
+  margin-top: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+ }
+ .welcomeElephant {
+  width: 80%;
+  border-radius: 20px;
+
+ }
+ .ElephantValleyText {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+ }
+ .ElephantImage {
+  width: 500px;
+ }
+ .Elephant-cards {
+  margin-top: 200px;
+ }
+ .Elephant-cards p {
+  width: 500px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+ }
+ .ElephantCard1 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard2 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard3 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .Elephant-cards img {
+  border-radius: 20px;
+ }
+ .JungleTrek {
+  
+  margin-top: 100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
+.JungleTrekContainer {
+   font-family: "Raleway", sans-serif;
+   font-size: 2rem;
+} 
+
+.JungleTrek1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+.JungleTrek2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.JungleTrek1 img,
+.JungleTrek2 img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.JungleTrekText1,
+.JungleTrekText2 {
+  margin-top: 20px;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.JungleTrekText1 h1,
+.JungleTrekText2 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.JungleTrekText1 p,
+.JungleTrekText2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.JungleTrekContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.JungleTrekContainer .JungleTrekText {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 200px;
+  color: black;
+}
+}
+@media (min-width: 768px) {
+  .foreground {
+            z-index: 2;
+            font-family: "Antic Didone", serif;
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .foreground h1 {
+           font-size: 2rem;
+        }
+        .spacer {
+  height: 150vh; /* enough height for scroll animations */
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.MkText {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-family: "Cabin", sans-serif;
+  margin-bottom: 40px;
+}
+
+.MkDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.textDescript {
+  font-size: 1.5rem;
+  line-height: 1.8;
+   font-family: "Antic Didone", serif;
+  opacity: 1; /* for animation */
+  position: relative;
+}
+ .horizontal-container {
+            display: flex;
+            height: 100vh;
+            width: 400vw;
+            flex-wrap: nowrap;
+            
+        }
+        .panel {
+            background-color: white;
+            color: black;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+             font-size: 1rem;
+            font-weight: bold;
+            flex-direction: column;
+          font-family: "Antic Didone", serif;
+        }
+        .image1 {
+    width: 400px;
+}
+    .image2 {
+    width: 400px;
+}
+    .image3 {
+    width: 400px;
+}
+    .image4 {
+    width: 400px;
+}
+.Talking {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+ }
+  .BouSra {
+  height: 250vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .BouSra h1 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+ }
+
+  .BouSraDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 1rem;
+  margin-top: 100px;
+ }
+ .BouSraDescription p {
+  width: 500px;
+  font-family: "Outfit", sans-serif;
+ }
+ .BouSraDescription img {
+  width: 400px;
+  border-radius: 20px;
+ }
+ .LengKhinDescription {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 200px;
+ }
+ .LengKhinDescription p {
+  width: 500px;
+  font-family: "Outfit", sans-serif;
+ }
+ .LengKhinDescription img {
+  width: 400px;
+  border-radius: 20px;
+ }
+ .PhnongEthnic {
+  margin-top: 100px;
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+ }
+ .PhnongEthnic img {
+  border-radius: 20px;
+ }
+ .PhnongEthnic h1 {
+  font-size: 2rem;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ 
+ .PhnongHeading {
+  padding: 100px;
+ }
+ .PhnongImage-Container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongImage-Container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongImage-1 {
+  width: 400px;
+ }
+ .PhnongImage-2 {
+  width: 400px;
+ }
+ .PhnongImage-3 {
+  width: 400px;
+ }
+ .PhnongImage-4 {
+  width: 400px;
+ }
+ .PhnongDescription {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 1rem;
+  padding: 50px;
+  text-align: center;
+ }
+ .ElephantValley {
+  margin-top: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+ }
+ .welcomeElephant {
+  width: 80%;
+  border-radius: 20px;
+
+ }
+ .ElephantValleyText {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+ }
+ .ElephantImage {
+  width: 500px;
+ }
+ .Elephant-cards {
+  margin-top: 200px;
+ }
+ .Elephant-cards p {
+  width: 500px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+ }
+ .ElephantCard1 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard2 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard3 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .Elephant-cards img {
+  border-radius: 20px;
+ }
+ .JungleTrek {
+  
+  margin-top: 100px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 70px;
+}
+.JungleTrekContainer {
+   font-family: "Raleway", sans-serif;
+   font-size: 2rem;
+} 
+
+.JungleTrek1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+.JungleTrek2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.JungleTrek1 img,
+.JungleTrek2 img {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.JungleTrekText1,
+.JungleTrekText2 {
+  margin-top: 20px;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.JungleTrekText1 h1,
+.JungleTrekText2 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.JungleTrekText1 p,
+.JungleTrekText2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.JungleTrekContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.JungleTrekContainer .JungleTrekText {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 200px;
+  color: black;
+}
+}
+@media (min-width: 1024px){
+         html, body {
+            margin: 0;
+            padding: 0;
+            overflow-x:hidden;
+            color: white;
+        }
+.spacer {
+  height: 150vh; /* enough height for scroll animations */
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.MkText {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-family: "Cabin", sans-serif;
+  margin-bottom: 40px;
+}
+
+.MkDescription {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.textDescript {
+  font-size: 2rem;
+  line-height: 1.8;
+   font-family: "Antic Didone", serif;
+  opacity: 1; /* for animation */
+  position: relative;
+}
+ .textDescript::after {
+  content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform-origin: left;
+            transform: scaleX(0);
+            background-color: black;
+            transition: transform 0.3s ease;
+ }
+  .textDescript:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+ 
+
+.mkImage {
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  opacity: 0; /* for animation */
+}
+
+
+        .parallax-section {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .background {
+            width: 100%;
+            height: 150%;
+            top:0;
+            left: 0;
+            position: absolute;
+            background-image: url(https://atypikvietnam.com/wp-content/uploads/2022/06/G%C3%A9ographie-de-Mondolkiri-Cambodge.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            z-index: 1;
+        }
+        .foreground {
+            z-index: 2;
+            font-family: "Antic Didone", serif;
+            position: relative;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .foreground h1 {
+           font-size: 4rem;
+        }
+        .horizontal-container {
+            display: flex;
+            height: 100vh;
+            width: 400vw;
+            flex-wrap: nowrap;
+            
+        }
+        .panel {
+            background-color: white;
+            color: black;
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            flex-shrink: 0;
+            justify-content: center;
+            align-items: center;
+             font-size: 2rem;
+            font-weight: bold;
+            flex-direction: column;
+          font-family: "Antic Didone", serif;
+        }
+        .foreground span {
+  margin: 0 10px;
+}
+.image {
+    width: 400px;
+}
+
+
+.parallax-section a {
+  z-index: 3;
+  position: absolute;
+  top: 40px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image1 {
+  width: 900px;
+  border-radius: 20px;
+}
+.image3 {
+  width: 800px;
+  border-radius: 20px;
+}
+.image2 {
+  width: 800px;
+  border-radius: 20px;
+}
+.image4 {
+  width: 800px;
+  border-radius: 20px;
+}
+
+ .Talking {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+ }
+ .BouSra {
+  height: 250vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ .BouSra h1 {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+ }
+  .BouSra h1::after {
+  content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform-origin: left;
+            transform: scaleX(0);
+            background-color: black;
+            transition: transform 0.3s ease;
+ }
+  .BouSra h1:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+ .BouSraDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 1.3rem;
+  margin-top: 100px;
+ }
+ .BouSraDescription p {
+  width: 400px;
+
+  font-family: "Outfit", sans-serif;
+ }
+ .BouSraDescription img {
+  width: 700px;
+  border-radius: 20px;
+ }
+  .LengKhinDescription {
+  display: flex;
+  font-size: 1.3rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 200px;
+ }
+ .LengKhinDescription p {
+  width: 600px;
+  font-family: "Outfit", sans-serif;
+ }
+ .LengKhinDescription img {
+  width: 800px;
+  border-radius: 20px;
+ }
+ .PhnongEthnic {
+  height: 200vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  
+ }
+ .PhnongEthnic img {
+  border-radius: 20px;
+ }
+ .PhnongEthnic h1 {
+  font-size: 2.5rem;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ }
+ 
+ .PhnongHeading {
+  padding: 100px;
+ }
+ .PhnongImage-Container1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongImage-Container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+ }
+ .PhnongDescription {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 45px;
+  padding: 50px;
+  text-align: center;
+ }
+ .PhnongDescription p {
+  position: relative;
+ }
+ .PhnongDescription P::after {
+  content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            transform-origin: left;
+            transform: scaleX(0);
+            background-color: black;
+            transition: transform 0.3s ease;
+ }
+  .PhnongDescription p:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+  }
+ 
+ .ElephantValley {
+  margin-top: 500px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+ }
+ .welcomeElephant {
+  width: 80%;
+  border-radius: 20px;
+
+ }
+ .ElephantValleyText {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  font-family: "Raleway", sans-serif;
+ }
+ .ElephantImage {
+  width: 1000px;
+ }
+ .Elephant-cards {
+  margin-top: 200px;
+ }
+ .Elephant-cards p {
+  width: 1000px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+ }
+ .ElephantCard1 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard2 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+  .ElephantCard3 {
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ }
+ .Elephant-cards img {
+  border-radius: 20px;
+ }
+.JungleTrek {
+  
+  margin-top: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 70px;
+}
+.JungleTrekContainer {
+   font-family: "Raleway", sans-serif;
+   font-size: 3rem;
+} 
+
+.JungleTrek1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 400px;
+  font-family: "Montserrat", sans-serif;
+}
+.JungleTrek2 {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  align-items: start;
+  flex-direction: column;
+  text-align: left;
+  max-width: 900px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+.JungleTrek1 img,
+.JungleTrek2 img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.JungleTrekText1,
+.JungleTrekText2 {
+  margin-top: 20px;
+  color: #222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.JungleTrekText1 h1,
+.JungleTrekText2 h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.JungleTrekText1 p,
+.JungleTrekText2 p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.JungleTrekContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.JungleTrekContainer .JungleTrekText {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-top: 200px;
+  color: black;
+}
+}

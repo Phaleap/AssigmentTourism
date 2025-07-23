@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    /* No height: 100% here as content will dictate height */
+    font-family: "Raslindale Display Condensed", sans-serif;
+    overflow-x: hidden; /* Keep this for horizontal scroll */
+    background-color: white;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    /* Keep general h1 styling for other sections */
+    width: 100%;
+    color: white;
+    font-size: 48vw; /* This is very large, consider if you want it this big for all h1s */
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    padding: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 100; /* Ensure nav stays on top */
+}
+
+.wrapper-404 {
+    /* REMOVE position: absolute; */
+    /* Let it flow normally */
+    width: 400vw; /* Keep this for horizontal content */
+    height: 100vh;
+    will-change: transform;
+    /* Add a background if you want it to be visible during scroll */
+    background-color: black; /* Or your desired background */
+}
+
+.card {
+    position: absolute; /* Keep absolute for cards within wrapper-404 */
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#card-1 {
+    top: 50%;
+    left: 20%;
+}
+
+#card-2 {
+    top: 25%;
+    left: 40%;
+}
+
+#card-3 {
+    top: 45%;
+    left: 60%;
+}
+
+#card-4 {
+    top: 15%;
+    left: 80%;
+}
+.space {
+    height: 5vh;
+    background-color: black;
+}
+.outro {
+    width: 100%;
+    height: 100vh;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Example background */
+    color: white;
+}
+
+.outro h1 {
+    /* No need for position absolute, top, left, transform if using flexbox on parent */
+    width: max-content;
+    font-size: 40px;
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    font-family: "Gabarito", sans-serif;
+    opacity: 0;
+}
+
+.section1 {
+    background-color: black; /* Example background */
+    height: 150vh;
+    width: 100%;
+    display: flex; /* Use flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color for section1 */
+}
+
+.section1 h1 {
+    font-size: 50px; /* Adjust as needed */
+}
+
+.container-temple {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  padding: 50px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.temple1, .temple2, .temple3, .temple4 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.temple1 img,
+.temple2 img,
+.temple3 img,
+.temple4 img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.temple1 p,
+.temple2 p,
+.temple3 p,
+.temple4 p {
+  color: white;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: left;
+  opacity: 0;
+}
+
+/* Alternate left-right layout */
+.temple1, .temple3 {
+  flex-direction: row;
+}
+
+.temple2, .temple4 {
+  flex-direction: row-reverse;
+}
+
+/* Title styling */
+.temple1 h1, .temple2 h1, .temple3 h1, .temple4 h1 {
+  font-size: 30px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section1 {
+  background: black;
+  height: 200vh;
+}
+/* General temple block layout */
+.temple1,
+.temple2,
+.temple3,
+.temple4 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  position: relative;
+}
+/* Image style with transition */
+.temple1 img,
+.temple2 img,
+.temple3 img,
+.temple4 img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Paragraph is hidden by default */
+.temple1 p,
+.temple2 p,
+.temple3 p,
+.temple4 p {
+  color: white;
+  font-size: 18px;
+  max-width: 600px;
+  line-height: 1.6;
+  text-align: left;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect: scale image + show text */
+.temple1:hover img,
+.temple2:hover img,
+.temple3:hover img,
+.temple4:hover img {
+  transform: scale(1.05);
+}
+
+.temple1:hover p,
+.temple2:hover p,
+.temple3:hover p,
+.temple4:hover p {
+  opacity: 1;
+}
+.parallax-container {
+ background-color: white;
+  height: 120vh;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Background stays fixed and fills view *
+/* Centered foreground text */
+.foreground {
+  top: 20%;
+  left: 50%;
+  font-size: 3rem;
+  z-index: 2;
+  color: black;
+  text-align: center;
+  margin-top: 50px;
+  font-family: "Outfit", sans-serif;
+}
+
+/* Wrapper to space out the two descriptions */
+.description-wrapper {
+  margin-top: 200px;
+  bottom: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  z-index: 2;
+}
+
+/* Description card style */
+.descriptionKulen {
+  width: 45%;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-family: "Gabarito", sans-serif;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.descriptionKulen img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.floatingVillage {
+  height: auto;
+  width: 100%;
+}
+.floatingTitle {
+  border: 1px solid black;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.floatingTitle h1 {
+  color: black;
+  font-size: 2.5rem;
+}
+.floatingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.floating {
+  padding: 100px;
+}
+.floating p {
+  padding: 20px 0;
+  width: 700px;
+  font-size: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+}
+.floating img {
+  border-radius: 10px;
+}
+.floatImage1 {
+  width: 700px;
+  
+}
+.floatImage2 {
+  width: 800px;
+}
+.floatImage3 {
+  width: 900px;
+}
+
+
+
+
+
+ body {
+  --light: #e6f03a;
+  --light: #ffffff;
+  --dark: #161616;
+}
+
+.animationBox {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--light);
+}
+
+span {
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  z-index: 2;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--light);
+  top: calc(50vh - 56px);
+
+  &.up {
+    right: 0;
+  }
+
+  &.down {
+    left: 0;
+  }
+}
+
+.box {
+  height: 1.2vh;
+  width: 50vw;
+  margin-bottom: -0.2vh;
+  background: var(--dark);
+  display: block;
+}
+.pubStreet {
+  height: 100vh;
+}
+.pubStreet img {
+  width: 70%;
+  border-radius: 10px;
+  
+}
+.psContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  gap: 40px;
+  padding: 50px;
+}
+.psContainer p {
+  align-self: center;
+  width: 500px;
+}
+/* ========== RESPONSIVE MEDIA QUERIES ========== */
+@media (max-width: 600px){
+  .floatingVillage {
+  height: auto;
+  width: 100%;
+}
+.floatingTitle {
+  border: 1px solid black;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+.floatingTitle h1 {
+  color: black;
+  font-size: 2.5rem;
+}
+.floatingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.floating {
+  padding: 100px;
+}
+.floating p {
+  padding: 20px 0;
+  width: 300px;
+  font-size: 1rem;
+  font-family: "Quicksand", sans-serif;
+}
+.floating img {
+  border-radius: 10px;
+}
+.floatImage1 {
+  width: 100px;
+  
+}
+.floatImage2 {
+  width: 200px;
+}
+.floatImage3 {
+  margin-top: 100px;
+  width: 200px;
+}
+.pubStreet {
+  height: 100vh;
+}
+.pubStreet img {
+  width: 70%;
+  border-radius: 10px;
+  align-self: center;
+  
+}
+.psContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+  padding: 50px;
+}
+.psContainer p {
+  align-self: center;
+  width: 300px;
+}
+span {
+  position: absolute;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  z-index: 2;
+  width: 50%;
+  text-transform: uppercase;
+  font-weight: 900;
+  color: var(--light);
+  top: calc(50vh - 56px);
+
+  &.up {
+    right: 0;
+  }
+
+  &.down {
+    left: 0;
+  }
+}
+.section1 {
+  background: black;
+  height: 300vh;
+}
+}
+@media (min-width: 600px){
+  
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 1024px){
+
+}

@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+    background-color: transparent;
+}
+.logo {
+     font-family: "Monoton", sans-serif;
+}
+.logo h1 {
+    font-weight: 400;
+     font-size: 30px;
+
+}
+.firstSection {
+    height: 250vh;
+}
+.introduction {
+    width: 500px;
+
+    padding: 20px;
+}
+.introduction h1 {
+    font-size: 5rem;
+    margin-bottom: 15px;
+    font-family: "Italiana", sans-serif;
+}
+.introduction p {
+    font-family: "Raleway", sans-serif;
+}
+.products {
+    width: 100%;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+    height: 30px;
+    padding: 30px 20px;
+    border: 1px solid rgb(205, 197, 197);
+    font-family: "Raleway", sans-serif;
+}
+/*sample*/
+.image1 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://www.khmerhousehotels.com/wp-content/uploads/2024/07/Khmer-House-Boutique-in-Siem-Reap-town-has-a-swimming-pool-overlooking-a-green-garden-2-780x519.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image1:hover {
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/583646147.jpg?k=9e2d118d7acae7dfb30d3e6d4afca90faa07014a42c18f47f83438861d35c620&o=&hp=1);
+}
+.image2 {
+    
+    height: 500px;
+    width: 500px;
+    background-image: url(https://lubd.com/wp-content/uploads/2020/01/THY_5909.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image2:hover {
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/10/4f/20/2a/junior-twin-room-with.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.image3 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/144685877.jpg?k=cc6aeddbbd308cf1272e628c1ebc479235597a4875abef9df8a9824a5f2393b9&o=&hp=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image3:hover {
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/411023199.jpg?k=8b2250e62d049a1acccbacee1e61326a2cb037d859a5a509c77d9d00d6ccf757&o=&hp=1);
+}
+.containProduct1 {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.containProduct1 .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.containImage1 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(219, 215, 215);
+}
+
+.containImage1 .text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  height: 60px;
+}
+.containImage1 .hover {
+    font-size: 15px ;
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.containImage1 .hover p{
+    color: rgb(135, 132, 132);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+ .hover a {
+    color: black;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.containImage1:hover .hover p{
+    opacity: 1;
+}
+.containImage1:hover .hover a {
+    opacity: 1;
+}
+/*2*/
+.image4 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/133024706.jpg?k=3f228ea1fc4a44954ef6c563f19ed1fa9676ad2c7e97806571a1db386aa898c9&o=&hp=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image4:hover {
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/115738411.jpg?k=8763bbc0e8b77393656c833f4bae23a508ca8328885e65a00cd10e7c46c181a9&o=&hp=1);
+}
+.image5 {
+    
+    height: 500px;
+    width: 500px;
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/352649170.jpg?k=8d8ca47d5762440ff22c3b91598aff6c20f71bb528baa537d05bbecb8e875002&o=&hp=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image5:hover {
+    background-image: url(https://images.trvl-media.com/lodging/9000000/8450000/8440600/8440565/ff3fda05.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.image6 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://cdn.palacegatepp.com/wp-content/uploads/2023/02/Palace-Gate-Hotel-Pool.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image6:hover {
+    background-image: url(https://cdn.palacegatepp.com/wp-content/uploads/2022/11/Royal-Suite-Double-with-View-01-1.jpg?strip=all&lossy=1&quality=85&webp=85&ssl=1);
+}
+.containProduct2 {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.containProduct2 .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.containImage2 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(219, 215, 215);
+}
+
+.containImage2 .text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  height: 60px;
+}
+.containImage2 .hover {
+    font-size: 15px ;
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.containImage2 .hover p{
+    color: rgb(135, 132, 132);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+ .hover a {
+    color: black;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.containImage2:hover .hover p{
+    opacity: 1;
+}
+.containImage2:hover .hover a {
+    opacity: 1;
+}
+/*3*/
+.image7 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://media.xmlcal.com/pic/p0009/1329/19.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image7:hover {
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/364235794.jpg?k=871b8f323e7bdf9d7efc5695b4e46eeda43e3bd440ba4cd116691f93db2679b8&o=&hp=1);
+}
+.image8 {
+    
+    height: 500px;
+    width: 500px;
+    background-image: url(https://cf.bstatic.com/xdata/images/hotel/max1024x768/250774796.jpg?k=5e0c3ec88126cf08fc1913049cb1bec366d556be0d8a9ec671183ea3930ba893&o=&hp=1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image8:hover {
+    background-image: url(https://okinawahai.com/wp-content/uploads/2015/01/IMG_4823.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.image9 {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://media-cdn.tripadvisor.com/media/photo-s/2c/1f/30/9b/caption.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.2s ease-in-out;
+}
+.image9:hover {
+    background-image: url(https://scarletsailsresort.co/images/mondulkiri-pizza-bungalows.jpg);
+}
+.containProduct3 {
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+}
+.containProduct3 .text {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.containImage3 {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(219, 215, 215);
+}
+
+.containImage3 .text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  height: 60px;
+}
+.containImage3 .hover {
+    font-size: 15px ;
+    padding: 10px;
+    font-family: "Outfit", sans-serif;
+    display: flex;
+    justify-content: space-between;
+}
+.containImage3 .hover p{
+    color: rgb(135, 132, 132);
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+ .hover a {
+    color: black;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+}
+.containImage3:hover .hover p{
+    opacity: 1;
+}
+.containImage3:hover .hover a {
+    opacity: 1;
+}
+.containImage1:hover {
+    border: 1px solid black;
+}
+.containImage2:hover {
+    border: 1px solid black;
+}
+.containImage3:hover{
+    border: 1px solid black;
+}
+.psycho-footer {
+  margin-top: 30px;
+  background: linear-gradient(to right, #0f0f0f, #1f1f1f);
+  color: #f5f5f5;
+  text-align: center;
+  padding: 30px 10px;
+  font-family: 'Playfair Display', serif;
+  
+}
+
+.psycho-footer h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+}
+
+.psycho-footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #ccc;
+}
+/* --- Responsive Styles --- */
+@media screen and (max-width: 1200px) {
+  .introduction {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .containProduct1,
+  .containProduct2,
+  .containProduct3 {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .containImage1,
+  .containImage2,
+  .containImage3 {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .logo h1 {
+    font-size: 24px;
+  }
+
+  .introduction {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .introduction h1 {
+    font-size: 3rem;
+  }
+
+  .products {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .containImage1,
+  .containImage2,
+  .containImage3 {
+    width: 100%;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5,
+  .image6,
+  .image7,
+  .image8,
+  .image9 {
+    width: 100%;
+    height: 300px;
+  }
+
+  .containProduct1,
+  .containProduct2,
+  .containProduct3 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .containImage1 .text,
+  .containImage2 .text,
+  .containImage3 .text {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .containImage1 .hover,
+  .containImage2 .hover,
+  .containImage3 .hover {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .logo h1 {
+    font-size: 20px;
+  }
+
+  .introduction h1 {
+    font-size: 2.2rem;
+  }
+
+  .containImage1 .text,
+  .containImage2 .text,
+  .containImage3 .text {
+    font-size: 16px;
+  }
+
+  .psycho-footer h2 {
+    font-size: 1.5rem;
+  }
+
+  .psycho-footer p {
+    font-size: 0.85rem;
+  }
+}
